@@ -17,5 +17,5 @@ response = requests.get(URL)
 if response.status_code == 200:
     #turns JSON into a python dictionary
     data_dict = json.loads(response.content)
-    #displays the dictionary on screen
+    #displays the dictionary
     print(json.dumps(data_dict, indent= 4))
